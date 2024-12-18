@@ -1,0 +1,85 @@
+/* Base styles for the experience section */
+.experience-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .experience {
+    background-color: #ffffff; /* White background for the experience box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Max width to avoid excessive stretching on large screens */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .experience:hover {
+    transform: translateY(-5px); /* Slight hover effect for interactivity */
+  }
+  
+  .experience-company {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .experience-period {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .experience-description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-description li {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  /* Adding custom bullet point styles */
+  .experience-description li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0078d4; /* Blue color for bullet points */
+    font-size: 1.5rem;
+    top: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding: 20px;
+    }
+  
+    .experience {
+      padding: 15px;
+      box-shadow: none; /* Remove shadow on small screens */
+    }
+  
+    .experience-company {
+      font-size: 1.5rem;
+    }
+  
+    .experience-period {
+      font-size: 1rem;
+    }
+  
+    .experience-description li {
+      font-size: 1rem;
+    }
+  }
+  
