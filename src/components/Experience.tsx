@@ -3,7 +3,7 @@ import "../styles/experienceStyle.css"
 
 const Experience = () => {
     return (
-        <>
+        <div id="experience">
             <div className="experience-section">
                 <div className="experience">
                     <p className="experience-company">HCL TECH Canada</p>
@@ -38,7 +38,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
