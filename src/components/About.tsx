@@ -10,34 +10,43 @@ import PowerAutomateLogo from "../icons/icon-microsoft-power-automate.svg";
 import ReactLogo from "../icons/icon-react.svg";
 import TypeScriptLogo from "../icons/icon-typescript.svg";
 import SQLLogo from "../icons/sql-database-generic-svgrepo-com.svg";
+import MSAssociateBadge from "../icons/microsoft-certified-associate-badge.svg";
+import MSExpertBadge from "../icons/microsoft-certified-expert-badge.svg";
+import Constants from "../constants.json";
 
 const About = () => {
-    return (<>
+    return (<div id="about">
         <div className="about-section">
             <div className="about-text">
                 <h1 className="title">Software developer</h1>
                 <p>
-                    Microsoft Certified Power Platform Solution Architect Expert and Power Platform Developer Associate.
+                    Results-driven software developer with experience in designing, developing, and deploying high-quality applications that address complex business and user needs.
                 </p>
-                <p>
-                    Results-driven software developer with experience in designing, developing, and deploying high-quality applications that address complex business and user needs. Skilled in C#, .NET, React, SQL, Microsoft Dynamics 365, and cloud-based solutions with Microsoft Azure to deliver innovative and scalable solutions.
-                </p>
-                <p>
-                    Proficient in creating Azure function apps, building front-end components with React, and enhancing MS Dynamics 365 systems. Proven track record of enhancing application security, improving code efficiency, and collaborating with cross-functional teams to ensure high-quality project outcomes.
-                </p>
+                <div className="certs-container">
+                    <div className="cert-icon" onClick={()=>{
+                        window.open(Constants.DevAssociateBadgeUrl,"_blank");
+                    }} title="Microsoft Certified: Power Platform Developer Associate">
+                        <MSAssociateBadge />
+                    </div>
+                    <div className="cert-icon" onClick={()=>{
+                        window.open(Constants.SAExpertBadgeUrl,"_blank");
+                    }} title="Microsoft Certified: Power Platform Solution Architect Expert">
+                        <MSExpertBadge />
+                    </div>
+                </div>
                 <div className="skills-container">
-                    <h2 className="skills-title">Skills</h2>
+                    <h4 className="skills-title">Skills</h4>
                     <div className="skills">
-                        <div className="skill-icon"><AzureFuncLogo /></div>
-                        <div className="skill-icon"><NetLogo /></div>
-                        <div className="skill-icon"><AzureLogo /></div>
-                        <div className="skill-icon"><CsharpLogo /></div>
-                        <div className="skill-icon"><JavaScriptLogo /></div>
-                        <div className="skill-icon"><PowerAppsLogo /></div>
-                        <div className="skill-icon"><PowerAutomateLogo /></div>
-                        <div className="skill-icon"><ReactLogo /></div>
-                        <div className="skill-icon"><TypeScriptLogo /></div>
-                        <div className="skill-icon"><SQLLogo /></div>
+                        <div className="skill-icon" title=".NET"><NetLogo /></div>
+                        <div className="skill-icon" title="C#"><CsharpLogo /></div>
+                        <div className="skill-icon" title="Microsoft Azure"><AzureLogo /></div>
+                        <div className="skill-icon" title="Azure Functions"><AzureFuncLogo /></div>
+                        <div className="skill-icon" title="React"><ReactLogo /></div>
+                        <div className="skill-icon" title="JavaScript"><JavaScriptLogo /></div>
+                        <div className="skill-icon" title="TypeScript"><TypeScriptLogo /></div>
+                        <div className="skill-icon" title="Power Apps"><PowerAppsLogo /></div>
+                        <div className="skill-icon" title="Power Automate"><PowerAutomateLogo /></div>
+                        <div className="skill-icon" title="SQL"><SQLLogo /></div>
                     </div>
                 </div>
             </div>
@@ -45,7 +54,7 @@ const About = () => {
                 <img src="" alt="Profile" />
             </div>
         </div>
-    </>)
+    </div>)
 }
 
 export default About;

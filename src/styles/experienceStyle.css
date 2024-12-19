@@ -17,9 +17,9 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .experience:hover {
-    transform: translateY(-5px); /* Slight hover effect for interactivity */
-  }
+  /* .experience:hover {
+    transform: translateY(-5px); 
+  } */
   
   .experience-company {
     font-size: 1.8rem;
@@ -45,19 +45,18 @@
     color: #555;
     line-height: 1.6;
     margin-bottom: 15px;
-    position: relative;
     padding-left: 25px;
   }
   
   /* Adding custom bullet point styles */
-  .experience-description li::before {
+  /* .experience-description li::before {
     content: "•";
     position: absolute;
     left: 0;
-    color: #0078d4; /* Blue color for bullet points */
+    color: #0078d4;
     font-size: 1.5rem;
     top: 0;
-  }
+  } */
   
   /* Responsive Design */
   @media (max-width: 768px) {

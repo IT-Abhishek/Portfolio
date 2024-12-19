@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/projectStyle.css"
 
 const Projects = () =>{
-    return(<>
+    return(<div id="projects">
         <div className="project-section">
             <div className="project-list">
                 <div className="project">
@@ -44,7 +44,7 @@ const Projects = () =>{
 
             </div>
         </div>
-    </>)
+    </div>)
 }
 
 export default Projects;
