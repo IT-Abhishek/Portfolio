@@ -11,7 +11,7 @@ const NavBar = () => {
     return (<header>
         <nav className="navbar">
             <div className="logo">
-                <a href="#">My Logo</a>
+                <a href="#">Home</a>
             </div>
             <div className="menu">
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>

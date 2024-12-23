@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f4f4f9;
+    /* background: linear-gradient(to bottom, #f3f4f6, #e2e8f0); */
+    color: #333; /* Text color for readability */
   }
   
   .experience {
@@ -13,13 +15,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 20px;
     width: 100%;
-    max-width: 800px; /* Max width to avoid excessive stretching on large screens */
+    max-width: 1200px; /* Max width to avoid excessive stretching on large screens */
     transition: transform 0.3s ease-in-out;
   }
   
-  /* .experience:hover {
+  .experience:hover {
     transform: translateY(-5px); 
-  } */
+  }
   
   .experience-company {
     font-size: 1.8rem;
@@ -46,17 +48,18 @@
     line-height: 1.6;
     margin-bottom: 15px;
     padding-left: 25px;
+    position: relative;
   }
   
   /* Adding custom bullet point styles */
-  /* .experience-description li::before {
+  .experience-description li::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #0078d4;
     font-size: 1.5rem;
     top: 0;
-  } */
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {

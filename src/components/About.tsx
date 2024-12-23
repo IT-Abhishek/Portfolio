@@ -12,7 +12,9 @@ import TypeScriptLogo from "../icons/icon-typescript.svg";
 import SQLLogo from "../icons/sql-database-generic-svgrepo-com.svg";
 import MSAssociateBadge from "../icons/microsoft-certified-associate-badge.svg";
 import MSExpertBadge from "../icons/microsoft-certified-expert-badge.svg";
+import D365Logo from "../icons/dynamics365-svg.svg";
 import Constants from "../constants.json";
+import ProfilPhoto from "../icons/profile-photo.jpg";
 
 const About = () => {
     return (<div id="about">
@@ -42,6 +44,7 @@ const About = () => {
                         <div className="skill-icon" title="Microsoft Azure"><AzureLogo /></div>
                         <div className="skill-icon" title="Azure Functions"><AzureFuncLogo /></div>
                         <div className="skill-icon" title="React"><ReactLogo /></div>
+                        <div className="skill-icon" title="Microsoft Dynamics 365"><D365Logo /></div>
                         <div className="skill-icon" title="JavaScript"><JavaScriptLogo /></div>
                         <div className="skill-icon" title="TypeScript"><TypeScriptLogo /></div>
                         <div className="skill-icon" title="Power Apps"><PowerAppsLogo /></div>
@@ -51,7 +54,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-image">
-                <img src="" alt="Profile" />
+                <img src={ProfilPhoto} alt="Profile" />
             </div>
         </div>
     </div>)

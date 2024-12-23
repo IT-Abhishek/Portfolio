@@ -22,6 +22,7 @@ const Projects = () =>{
                     <p className="project-title">Dice Game</p>
                     <ul className="tech-list">
                         <li>React</li>
+                        <li>JavaScript</li>
                     </ul>
                     <p className="project-description">
                     Developed an interactive single-page application (SPA) for a dynamic dice game using React and CSS.<br></br>
@@ -33,6 +34,7 @@ const Projects = () =>{
                     <p className="project-title">Weather Dashboard</p>
                     <ul className="tech-list">
                         <li>React</li>
+                        <li>TypeScript</li>
                     </ul>
                     <p className="project-description">
                     Created a weather dashboard that fetches real-time weather data from the OpenWeatherMap API
