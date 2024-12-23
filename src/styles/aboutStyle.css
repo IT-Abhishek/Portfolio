@@ -211,10 +211,10 @@
       height: 100px;
     }
   
-    .skill-icon svg {
+    /* .skill-icon svg {
       max-width: 50%;
       max-height: 50%;
-    }
+    } */
 
     .certs-container {
       padding: 1rem;
@@ -225,11 +225,11 @@
       width: 100px;
       height: 100px;
     }
-  
+/*   
     .cert-icon svg {
       max-width: 70%;
       max-height: 70%;
-    }
+    } */
     
   }
   
@@ -244,10 +244,10 @@
     height: 80px;
   }
 
-  .skill-icon svg {
+  /* .skill-icon svg {
     max-width: 40%;
     max-height: 40%;
-  }
+  } */
 
   .certs-container {
     gap: 10px;
@@ -258,10 +258,10 @@
     height: 80px;
   }
 
-  .cert-icon svg {
+  /* .cert-icon svg {
     max-width: 60%;
     max-height: 60%;
-  }
+  } */
 
   .about-image {
     display: none;
