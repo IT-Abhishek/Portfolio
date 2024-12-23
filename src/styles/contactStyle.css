@@ -1,7 +1,9 @@
 .contact-form-container {
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f4f4f9;
+    background: linear-gradient(to bottom, #f3f4f6, #e2e8f0);
+    color: #333; /* Text color for readability */
   }
   
   .contact-form-container h2 {
