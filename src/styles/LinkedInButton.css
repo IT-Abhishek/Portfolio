@@ -1,0 +1,54 @@
+/* General button styles */
+.linkedin-btn {
+    /* display: inline-flex; */
+    /* align-items: center; */
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    /* font-size: 18px; */
+    /* padding: 12px 24px; */
+    /* border: none; */
+    border-radius: 5px;
+    /* text-decoration: none; */
+    /* font-family: Arial, sans-serif; */
+    /* transition: all 0.3s ease; */
+    /* margin: 10px; */
+  }
+  
+  /* LinkedIn icon */
+  /* .linkedin-btn i {
+    margin-right: 8px;
+    font-size: 20px;
+  } */
+  
+  /* Hover effect */
+  .linkedin-btn:hover {
+    background-color: #005c8e;
+    transform: scale(1.05);
+  }
+  
+  /* Focus effect for accessibility */
+  .linkedin-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  }
+  
+  /* Responsive: Adjust button size for mobile */
+  @media (max-width: 600px) {
+    .linkedin-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .linkedin-btn i {
+      font-size: 18px;
+    }
+  }
+  
+  /* Responsive: Adjust button for larger screens */
+  @media (min-width: 600px) {
+    .linkedin-btn {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  }
+  
