@@ -46,6 +46,11 @@
     border-radius: 5px;
   }
   
+  .nav-links .linkedin-btn:hover {
+    background-color: #005c8e;
+    border-radius: 5px;
+  }
+
   /* Hamburger menu (hidden by default) */
   .hamburger {
     display: none;
