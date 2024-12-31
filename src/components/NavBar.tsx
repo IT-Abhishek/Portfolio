@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/NavBarStyle.css";
 import "../styles/LinkedInButton.css";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Specify the correct element type for the refs
-  const menuRef = useRef<HTMLDivElement | null>(null); 
-  const hamburgerRef = useRef<HTMLDivElement | null>(null); 
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const hamburgerRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,8 +17,10 @@ const NavBar = () => {
   const handleClickOutside = (event: MouseEvent) => {
     // Close the menu if the click is outside of the menu or hamburger
     if (
-      menuRef.current && !menuRef.current.contains(event.target as Node) &&
-      hamburgerRef.current && !hamburgerRef.current.contains(event.target as Node)
+      menuRef.current &&
+      !menuRef.current.contains(event.target as Node) &&
+      hamburgerRef.current &&
+      !hamburgerRef.current.contains(event.target as Node)
     ) {
       setIsMenuOpen(false);
     }
@@ -51,12 +54,17 @@ const NavBar = () => {
               <a href="#projects">Projects</a>
             </li>
             <li>
+              <a href="mailto:cabhishek660@gmail.com" className="email-btn">
+                <i className="fas fa-envelope"></i> Email Me
+              </a>
+            </li>
+            <li>
               <a
                 href="https://www.linkedin.com/in/abhishek-chauhan-dev"
                 target="_blank"
                 className="linkedin-btn"
               >
-                <i className="fab fa-linkedin"></i> Connect with LinkedIn
+                <i className="fab fa-linkedin"></i> Connect with Me
               </a>
             </li>
           </ul>
