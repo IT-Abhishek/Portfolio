@@ -27,14 +27,15 @@ module.exports = {
         use: ['@svgr/webpack'],
       },
       {
-        test: /\.jpg$/,
-        type: 'asset/resource'
+        test: /\.(jpg)$/,
+        type: 'asset/resource',
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      favicon: './public/favicon.ico',
     }),
   ],
   devServer: {
