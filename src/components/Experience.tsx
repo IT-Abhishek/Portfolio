@@ -11,10 +11,11 @@ const Experience = () => {
           <div className="experience-description">
             <ul>
               <li>
-                Designed and developed Microsoft Dynamics 365 applications in
-                the fast-paced agile environment. Transformed business
-                requirements and research into technical solutions that met
-                application security and performance goals.
+                Designed and developed customized Microsoft Dynamics CRM and
+                Power Platform based applications in the fast-paced agile
+                environment. Transformed business requirements and research into
+                technical solutions that met application security and
+                performance goals.
               </li>
               <li>
                 Developed Azure Function App using .NET for secure file uploads
@@ -27,21 +28,20 @@ const Experience = () => {
                 readability.
               </li>
               <li>
-                Leveraged Azure Logic Apps to streamline workflows and integrate
-                different systems with Dynamics CRM application, enhancing data
-                exchange and functionality.
+                Implemented a CI/CD pipeline using Azure DevOps, automating
+                build and deployment processes, resulting in a 50% reduction in
+                manual deployment efforts.
               </li>
               <li>
-                Created Azure Web Jobs for automated background processing and
-                used Application Insights for monitoring, diagnostics, and
-                performance optimization.
+                Developed Canvas Apps and pages to address diverse business
+                needs, along with Power Automate flows, custom connectors, and
+                Power BI dashboards for enhanced data visualization and process
+                automation.
               </li>
               <li>
-                Implemented backend components for Dynamics CRM App, including
-                plug-ins, Logic Apps, and custom connectors to integrate with
-                external systems, while leading the transition from
-                certificate-based to token-based authentication to enhance
-                application security.
+                Implemented key components, including database entities, forms,
+                views, plug-ins, Logic Apps, and workflows to integrate with
+                external systems.
               </li>
               <li>
                 Collaborated with cross-functional teams and worked closely with
