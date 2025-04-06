@@ -1,87 +1,95 @@
 /* Base styles for the experience section */
 .experience-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f4f4f9;
-    /* background: linear-gradient(to bottom, #f3f4f6, #e2e8f0); */
-    color: #333; /* Text color for readability */
-  }
-  
-  .experience {
-    background-color: #ffffff; /* White background for the experience box */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between experience entries */
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.experience {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 1200px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.experience-company {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.experience-period {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.experience-description ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-description li {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  padding-left: 28px;
+  position: relative;
+}
+
+/* Custom bullet point */
+.experience-description li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0078d4;
+  font-size: 1.4rem;
+  line-height: 1;
+  top: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-section {
     padding: 20px;
-    width: 100%;
-    max-width: 1200px; /* Max width to avoid excessive stretching on large screens */
-    transition: transform 0.3s ease-in-out;
   }
-  
-  .experience:hover {
-    transform: translateY(-5px); 
+
+  .experience {
+    padding: 20px;
+    box-shadow: none;
   }
-  
+
   .experience-company {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .experience-period {
-    font-size: 1.1rem;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .experience-description ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .experience-description li {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    padding-left: 25px;
-    position: relative;
-  }
-  
-  /* Adding custom bullet point styles */
-  .experience-description li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #0078d4;
     font-size: 1.5rem;
-    top: 0;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .experience-section {
-      padding: 20px;
-    }
-  
-    .experience {
-      padding: 15px;
-      box-shadow: none; /* Remove shadow on small screens */
-    }
-  
-    .experience-company {
-      font-size: 1.5rem;
-    }
-  
-    .experience-period {
-      font-size: 1rem;
-    }
-  
-    .experience-description li {
-      font-size: 1rem;
-    }
+
+  .experience-period {
+    font-size: 1rem;
   }
-  
+
+  .experience-description li {
+    font-size: 1rem;
+    padding-left: 22px;
+  }
+
+  .experience-description li::before {
+    font-size: 1.2rem;
+    top: 4px;
+  }
+}
